@@ -289,7 +289,8 @@ function ProductList({ onHomeClick }) {
                 <div className="product-grid">
                     {plantsArray.map((category, index) => (
                         <div key={index}>
-                            <h1>
+                            <h1 style={{ textAlign: 'center' }}>
+
                                 <div>{category.category}</div>
                             </h1>
                             <div className='product-list'>
@@ -301,7 +302,7 @@ function ProductList({ onHomeClick }) {
                                         <img className='product-image'
                                         src={plant.image}
                                         alt={plant.name} />
-                                        <div className='product-price'>
+                                        <divclassName='product-price'>
                                             ${plant.cost}
                                         </div>
                                         <div className='product-description'>
