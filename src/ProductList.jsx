@@ -290,8 +290,7 @@ function ProductList({ onHomeClick }) {
                     {plantsArray.map((category, index) => (
                         <div key={index}>
                             <h1 style={{ textAlign: 'center' }}>
-
-                                <div>{category.category}</div>
+                                <div style={{ display: 'inline-block', margin: '10px 0', borderTop: '1px solid black', borderBottom: '1px solid black' }}>{category.category}</div>
                             </h1>
                             <div className='product-list'>
                                 {category.plants.map((plant, plantIndex) => (
@@ -302,8 +301,8 @@ function ProductList({ onHomeClick }) {
                                         <img className='product-image'
                                         src={plant.image}
                                         alt={plant.name} />
-                                        <divclassName='product-price'>
-                                            ${plant.cost}
+                                        <div className='product-price'>
+                                            {plant.cost}
                                         </div>
                                         <div className='product-description'>
                                             {plant.description}
