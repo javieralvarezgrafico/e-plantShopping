@@ -97,7 +97,8 @@ body {
     height: 200px; /* Adjust height for better consistency */
 }
 
-.product-button {
+/* ERROR FROM COURSERA ORIGINAL REPO. DUPLICATED DEFINITION */
+/*.product-button {
     background-color: #e74c3c;
     color: #fff;
     border: none;
@@ -109,7 +110,7 @@ body {
 
 .product-button:hover {
     background-color: #c0392b;
-}
+}*/
 
 /* Pseudo-elements - Sale badge */
 .product-card::before {
