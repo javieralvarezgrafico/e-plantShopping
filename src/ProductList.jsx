@@ -12,7 +12,11 @@ function ProductList({ onHomeClick }) {
     const dispatch = useDispatch();
 
     const cartItems = useSelector((state) => state.cart.items);
-    const cartQuantity = cartItems.length;
+    // const cartQuantity = cartItems.length;
+
+    const calculateTotalQuantity = () => cartItems.reduce((total, item) => total + item.quantity, 0);
+    const cartQuantity = calculateTotalQuantity();
+
 
     const plantsArray = [
         {
